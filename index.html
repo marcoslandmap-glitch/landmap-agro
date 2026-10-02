@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LandMap Agro – plugin QGIS para agricultura de precisão</title>
+<meta name="description" content="LandMap Agro: plugin gratuito para QGIS que projeta linhas de plantio, terraços e manobras e exporta limites e linhas-guia para monitores e pilotos automáticos.">
+<style>
+  :root{--bg:#f6f9f8;--card:#fff;--tx:#1d2b2a;--mut:#5b6b69;--ac:#1f6f6a;--bd:#d7e3e1}
+  @media (prefers-color-scheme:dark){:root{--bg:#101817;--card:#17211f;--tx:#e6efed;--mut:#9db0ad;--ac:#5fc3b9;--bd:#2a3a37}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Segoe UI",system-ui,Arial,sans-serif}
+  main{max-width:860px;margin:0 auto;padding:32px 16px 56px}
+  h1{font-size:1.9rem;margin:.2em 0;color:var(--ac)}
+  h2{font-size:1.2rem;margin:1.6em 0 .5em;border-bottom:2px solid var(--ac);padding-bottom:.2em}
+  .sub{color:var(--mut);margin:0 0 1.2em}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px 18px;margin:12px 0}
+  ul{padding-left:1.2em;margin:.4em 0}
+  li{margin:.25em 0}
+  .tag{display:inline-block;font-size:.8rem;border:1px solid var(--bd);border-radius:999px;padding:1px 10px;color:var(--mut);margin-right:6px}
+  footer{margin-top:2em;color:var(--mut);font-size:.9rem}
+  a{color:var(--ac)}
+</style>
+</head>
+<body>
+<main>
+  <span class="tag">Plugin QGIS</span><span class="tag">Agricultura de precisão</span><span class="tag">Em desenvolvimento</span>
+  <h1>LandMap Agro</h1>
+  <p class="sub">Projeto agrícola dentro do QGIS: linhas de plantio, terraços, manobras, declividade, dados de máquinas e exportação para monitores e pilotos automáticos.</p>
+
+  <div class="card">
+    <strong>O que é.</strong> O LandMap Agro é um plugin para o <a href="https://qgis.org">QGIS</a> (software livre de geoprocessamento) que reúne, num único painel de abas,
+    as ferramentas de sistematização agrícola usadas em propriedades rurais: do levantamento do terreno até o arquivo que o monitor da máquina lê.
+  </div>
+
+  <h2>O que ele faz</h2>
+  <ul>
+    <li><b>Sistematização:</b> linhas de plantio, terraços, carreadores, bordadura, manobras automáticas e trajetórias com curvas suaves.</li>
+    <li><b>Terreno:</b> modelo digital de terreno, curvas de nível, declividade, escoamento superficial e nivelamento (corte e aterro).</li>
+    <li><b>Análises:</b> melhor sentido das linhas, comparação de cenários, tráfego controlado, perda de solo e NDVI com imagens Sentinel-2.</li>
+    <li><b>Máquinas:</b> importação e limpeza de dados, mapas de cobertura, planejado × aplicado e simulador animado.</li>
+    <li><b>Exportação:</b> limites e linhas-guia nos formatos ISOXML, John Deere, Trimble, CNH, Stara, Raven, Jacto, AGCO, Topcon e outros.</li>
+    <li><b>Gestão de propriedades:</b> estrutura padrão de pastas e GeoPackage por fazenda, com processamento completo em um clique e relatório.</li>
+  </ul>
+
+  <h2>John Deere Operations Center</h2>
+  <div class="card">
+    O plugin já gera os arquivos nos formatos aceitos pelo Operations Center (Gen4/G5, GS3 2630 e ISOXML). Estamos avaliando a integração
+    direta por API, <b>somente para uso do próprio produtor ou do técnico responsável pela propriedade</b>, com autorização explícita do usuário
+    em cada conexão. Não há venda de dados nem redistribuição de materiais da John Deere.
+  </div>
+
+  <h2>Estado do projeto</h2>
+  <ul>
+    <li>Plugin gratuito, em desenvolvimento, com testes automáticos e interface em português, inglês e espanhol.</li>
+    <li>Funciona com o QGIS 3.28 ou mais novo (testado na versão 3.44 LTR).</li>
+  </ul>
+
+  <hr style="border:none;border-top:1px solid var(--bd);margin:28px 0">
+
+  <h2>English summary</h2>
+  <p><b>LandMap Agro</b> is a free QGIS plugin for precision-agriculture field layout: planting lines, terraces, headland turns, slope analysis,
+  machine data and export of field boundaries and guidance lines to monitors and autosteer systems. It already writes files in the formats accepted by
+  John Deere Operations Center and is being evaluated for direct API integration, strictly for the farm operator's own use, with the user's explicit
+  authorization on each connection. The project is under development.</p>
+
+  <footer>LandMap Agro · plugin gratuito para QGIS</footer>
+</main>
+</body>
+</html>
